@@ -1,6 +1,6 @@
 import os
 
-def dfile: str, args: str = "", out: str = "./videos/"):
+def dfile(file: str, args: str = "", out: str = "./videos/"):
   with open(file, "r") as f:
     for line in f.read().splitlines():
       try:
