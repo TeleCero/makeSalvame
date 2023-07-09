@@ -12,5 +12,5 @@ def dyear(year: int, args: str = "", out: str = "./videos/"):
   file = f"./playlist/{year}.txt"
   dfile(file, args)
 if __name__ == "__main__":
-  dyear(2023)
+  dyear(2023, "-P ../videos/ -f 'best[height<=480][ext=mp4]/bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[height<=480]'")
   print("makeSalvame Done")
